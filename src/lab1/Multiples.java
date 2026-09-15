@@ -7,6 +7,10 @@ public class Multiples {
         System.out.println(count);
     }
 
+    static int multiples() {
+        return multiples(1000, 3, 5);
+    }
+
     static int multiples(int n, int a, int b) {
         int count = 0;
 
