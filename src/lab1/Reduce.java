@@ -1,0 +1,23 @@
+package lab1;
+
+public class Reduce {
+
+    static void main() {
+        int n = 100;
+        int count = reduce(n);
+        System.out.println(count);
+    }
+
+     static int reduce(int n) {
+        int count = 0;
+        while (n > 0) {
+            count++;
+            if (n % 2 == 0) {
+                n = n / 2;
+            } else {
+                n--;
+            }
+        }
+        return count;
+    }
+}
